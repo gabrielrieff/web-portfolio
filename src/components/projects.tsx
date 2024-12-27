@@ -20,11 +20,11 @@ export default function Projects() {
             </div>
             <p className="line-clamp-5 text-justify">{project.description}</p>
             <div className="flex justify-between items-center">
-              <Link href={project.links.github}>
+              <Link href={project.links.github} target="_blank">
                 <FaGithub className="size-8" />
               </Link>
               <Link
-                href={""}
+                href={`/project/${project.id}`}
                 className="font-extralight text-xs hover:text-slate-600"
               >
                 Ler mais...

@@ -23,7 +23,7 @@ A arquitetura da API segue em REST, utilizando métodos HTTP padrão para uma co
 Dentre os pacotes NuGet utilizados, o AutoMapper é responsável pelo mapeamento  entre objetos de domínio e requisição/resposta, reduzindo a necessidade de código repetitivo e manual. O FluentAssertivo é utilizado nos testes de unidade para tornar as verificações mais legíveis, ajudando a escrever testes claros e compreensíveis. Para as validações, o FluentValidation é usado para implementar regras de validação de formas simples e intuitivas nas classes de requisições, mantendo o código limpo e fácil de manter. Por fim, o EntityFramework atua como ORM que simplifica as interações com o banco de dados, permitindo o uso de objetos .NET para manipular dados diretamente, sem a necessidade de lidar com consultas SQL.`,
     technologies: [RiNextjsFill, AiOutlineDotNet, SiMysql, SiTypescript],
     links: {
-      github: "",
+      github: "https://github.com/gabrielrieff/financeflow",
       website: "",
     },
   },
