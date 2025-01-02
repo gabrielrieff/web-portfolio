@@ -6,7 +6,7 @@ import StackTech from "@/components/stack-tech";
 
 export default function Home() {
   return (
-    <div className="w-1/2 flex justify-center items-center flex-col gap-10">
+    <div className="md:w-2/3 flex justify-center items-center flex-col gap-10 w-full p-2">
       <Header />
 
       <About />

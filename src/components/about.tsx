@@ -3,7 +3,9 @@ export default function About() {
     <main className="flex flex-col w-full">
       <strong>Olá, me chamo</strong>
       <div>
-        <h1 className="font-extrabold text-8xl text-transparent bg-gradient-to-r from-pink-500 via-gray-200 to-purple-500 inline-block bg-clip-text">
+        <h1 className="font-extrabold md:text-8xl text-7xl text-transparent bg-gradient-to-r
+        dark:from-pink-500 dark:via-gray-200 dark:to-purple-500 from-red-500 via-gray-200 to-orange-500
+         inline-block bg-clip-text">
           Gabriel rieff
         </h1>
       </div>

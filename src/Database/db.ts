@@ -1,30 +1,37 @@
-import { IconType } from "react-icons";
-import { AiOutlineDotNet } from "react-icons/ai";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiMysql, SiTypescript } from "react-icons/si";
-
-type dbProject = {
-  id: number;
-  title: string;
-  description: string;
-  technologies: IconType[];
-  links: {
-    github: string;
-    website: string;
-  };
-};
+import { RiNodejsFill, RiNextjsLine  } from "react-icons/ri";
+import { SiMysql, SiExpress, SiDotnet } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { dbProject } from "./Project";
 
 export const data: dbProject[] = [
   {
     id: 1,
-    title: "Finance flow",
-    description: `Esta é uma API desenvolvida utilizando .NET 8, com princípios do Domain-Driven Design (DDD) para fornecer uma solução estruturada e eficaz no gerenciamento de despesas pessoais. O principal objetivo é permitir ao usuário registrar suas despesas, detalhando algumas informações essenciais como título, data descrição, valor e forma de pagamento, utilizando uma forma segura de armazenar os dados, com o banco de dados MySQL.
-A arquitetura da API segue em REST, utilizando métodos HTTP padrão para uma comunicação eficiente e simplificada.
-Dentre os pacotes NuGet utilizados, o AutoMapper é responsável pelo mapeamento  entre objetos de domínio e requisição/resposta, reduzindo a necessidade de código repetitivo e manual. O FluentAssertivo é utilizado nos testes de unidade para tornar as verificações mais legíveis, ajudando a escrever testes claros e compreensíveis. Para as validações, o FluentValidation é usado para implementar regras de validação de formas simples e intuitivas nas classes de requisições, mantendo o código limpo e fácil de manter. Por fim, o EntityFramework atua como ORM que simplifica as interações com o banco de dados, permitindo o uso de objetos .NET para manipular dados diretamente, sem a necessidade de lidar com consultas SQL.`,
-    technologies: [RiNextjsFill, AiOutlineDotNet, SiMysql, SiTypescript],
+    title: "Gerencimento de tarefas",
+    imagens: [""],
+    description: {
+      resume: `Um sistema de gerenciamento de tarefas projetado para organizar a rotina de forma simples, rápida e acessível.`,
+      about: `Este sistema foi desenvolvido para ajudar o usuário a organizar sua rotina, incluindo tarefas e compromissos, de forma simples e rápida. Com um design otimizado para dispositivos móveis, oferece agilidade, velocidade e acessibilidade.`,
+      TechnologyChoices: `As tecnologias utilizadas incluem Next.js no front-end, escolhido por sua velocidade e robustez, e Node.js com Express no back-end, garantindo flexibilidade e eficiência. O banco de dados PostgreSQL foi adotado para sua confiabilidade e suporte a operações complexas.`
+    },
+    technologies: [BiLogoTypescript, RiNextjsLine, RiNodejsFill, SiExpress, BiLogoPostgresql],
+    links: {
+      github: "",
+      website: "adsdasd"
+    }
+  },
+  {
+    id: 2,
+    title: "Fluxo de finanças",
+    imagens: [],
+    description: {
+      resume: "Aplicação para gerenciamento de finanças pessoais com foco em simplicidade e eficiência.",
+      about: "",
+      TechnologyChoices: ""
+    },
+    technologies: [BiLogoTypescript, SiDotnet, RiNextjsLine, SiMysql],
     links: {
       github: "https://github.com/gabrielrieff/financeflow",
-      website: "",
     },
   },
 ];
